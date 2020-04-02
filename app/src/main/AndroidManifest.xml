@@ -24,6 +24,9 @@
         <activity android:name=".Search" />
         <activity android:name=".Login" />
         <activity
+            android:name=".CreateEvent"
+            android:label="@string/title_activity_create_event"></activity>
+        <activity
             android:name=".Chapter"
             android:label="@string/title_activity_chapter"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -43,3 +46,7 @@
     </application>
 
 </manifest>
+
+
+
+
