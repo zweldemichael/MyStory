@@ -1,0 +1,14 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/fontEntries"
+            app:entryValues="@array/fontEntries"
+            app:key="fontfamily"
+            app:title="Select Font"
+            app:useSimpleSummaryProvider="true" />
+
+
+
+
+</PreferenceScreen>

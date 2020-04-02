@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <RelativeLayout
+        android:id="@+id/ButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchorGravity="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search_bar"
+            android:layout_width="372dp"
+            android:layout_height="67dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="471dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+
+            android:hint="   "
+            android:inputType="textAutoComplete"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/searchIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="203dp"
+            android:layout_marginRight="42dp"
+            android:background="@android:drawable/ic_search_category_default" />
+
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="193dp"
+            android:layout_height="49dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginLeft="103dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="253dp"
+
+            android:text="SEARCH"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#01579B"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/menu"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="58dp"
+            android:background="@drawable/ic_menu_24px" />
+
+
+    </RelativeLayout>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_anchor="@+id/ButtonLayout"
+    app:layout_anchorGravity="center"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#01579B" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/ButtonLayout"
+        app:layout_anchorGravity="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <Button
+            android:id="@+id/home"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="29dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="349dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/ic_sydney_opera_house" />
+
+        <Button
+            android:id="@+id/profile"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="234dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/ic_user" />
+
+        <Button
+            android:id="@+id/media"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="36dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="133dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/ic_perm_media_24px" />
+
+        <Button
+            android:id="@+id/settings"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="39dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/ic_settings_24px" />
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
